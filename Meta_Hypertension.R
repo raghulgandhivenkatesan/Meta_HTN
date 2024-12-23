@@ -4,14 +4,10 @@ library(meta)
 
 ####################Data for meta-analysis########################
 hypertension_data <- data.frame(
-  Author = c("Mahapatra et al., (2021)", "Santosh et al., (2019)", 
-             "Basavanagowdappa et al., (2016)", "Boppana et al., (2023)", 
-             "Annie Caroline et al., (2021)", "Bharatia et al., (2016)", 
-             "Gupta et al., (2019)", "Mandal et al., (2014)", 
-             "Umamaheswari et al., (2019)","Sagarad et al.,(2013)","Garg et al.,(2018)"),
-  Year = c(2021, 2019, 2016, 2023, 2021, 2016, 2019, 2014, 2019, 2013, 2018), # Pub. years
-  Events = c(31, 67, 248, 100, 130, 922, 525, 70, 18, 30, 4), # Hypertension cases
-  N = c(275, 169, 1537, 200, 200, 4725, 3073, 300, 100, 990, 42) # Total sample size
+  Author = c(),
+  Year = c(), # Pub. years
+  Events = c(), # Hypertension cases
+  N = c() # Total sample size
 )
 # Sorting the data by Year in ascending order
 hypertension_data <- hypertension_data[order(hypertension_data$Year), ]
