@@ -144,24 +144,6 @@ forest.meta(
   xlim = c(0, 1),               # Adjust x-axis range
   main = "Forest Plot: Random Effect Model After Removing Outlier (Study 5)"
 )
------------------------------------------------------------------------------------------
-# (Optional)#Display forest plot for overall studies in R console
-forest(overall_meta,
-       leftcols = c("studlab", "event", "n", "w.random"),
-       leftlabs = c("Study", "Cases", "Total", "Weight"),
-       rightcols = c("effect", "ci"),
-       rightlabs = c("Prevalence", "95% CI"),
-       col.square = "blue", col.diamond = "red",
-       col.diamond.lines = "black",
-       type.random = "diamond",  # Ensure random-effects model is displayed
-       common = FALSE,           # Remove common-effect model
-       overall = TRUE,           # Display random-effects summary
-       print.tau2 = TRUE, print.I2 = TRUE, print.Q = TRUE, # Include heterogeneity stats
-       prediction = TRUE,        # Ensure prediction interval is displayed
-       digits = 3, 
-       xlim = c(0, 1),           # Proper x-axis range
-       main = "Forest Plot with Random Effect Model and Prediction Interval")
----------------------------------------------------------------------------------------
 #####################Step 9: Funnel Plot for Publication Bias###########################
 funnel(pes, main = "Funnel Plot for Hypertension Data")
 
